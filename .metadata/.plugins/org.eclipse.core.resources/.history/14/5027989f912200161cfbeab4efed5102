@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="elUnicoDios" class="com.curso.spring.Dios" factory-method="getInstance"/>
+
+	<bean id="habitantesEnCalleMayor">
+		<property name="direccion" ref="calleMayor"/>
+	</bean>
+
+	<bean id="adan" factory-bean="elUnicoDios" 
+			factory-method="crearPersona" scope="prototype"
+			depends-on="calleMayor">
+	
+		<property name="nombre" value="Adan"></property>
+		
+	
+	</bean>
+	
+	<bean id="calleMayor" class="com.curso.spring.Direccion">
+		<property name="calle" value="Mayor"/>
+	</bean>
+	
+	<bean id="eva" factory-bean="elUnicoDios" factory-method="crearPersona"/>
+
+</beans>

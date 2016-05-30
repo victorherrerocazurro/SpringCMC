@@ -1,0 +1,9 @@
+package com.curso.spring.persistencia;
+
+import javax.sql.DataSource;
+
+public class PersonaDao {
+	
+	private DataSource ds;
+	
+}

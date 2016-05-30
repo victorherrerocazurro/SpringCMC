@@ -1,0 +1,7 @@
+package com.ejemplo.contenedor.logica;
+
+public class Negocio {
+
+	private Persistencia persistencia = new Persistencia();
+	
+}

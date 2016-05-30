@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.ejemplo.contenedor.logica.NuevaImplementacionPersistencia"/>
+<fullyQualifiedTypeName name="com.ejemplo.contenedor.Contenedor"/>
+<fullyQualifiedTypeName name="com.ejemplo.contenedor.logica.Negocio"/>
+<fullyQualifiedTypeName name="com.ejemplo.contenedor.web.WebApplicationListener"/>
+<fullyQualifiedTypeName name="org.springframework.web.context.support.WebApplicationContextUtils"/>
+<fullyQualifiedTypeName name="com.ejemplo.spring.holamundo.Saludador"/>
+<fullyQualifiedTypeName name="com.curso.spring.Persona"/>
+<fullyQualifiedTypeName name="com.curso.spring.Dios.PersonaImpl"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.curso.spring.Direccion"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+<fullyQualifiedTypeName name="javax.activation.DataSource"/>
+<fullyQualifiedTypeName name="javax.sql.DataSource"/>
+<fullyQualifiedTypeName name="com.curso.spring.entidades.Persona"/>
+<fullyQualifiedTypeName name="com.curso.spring.persistencia.PersonaDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,10 @@
+package com.ejemplo.contenedor.logica;
+
+public class Persistencia {
+
+	public void metodoPersistencia() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.curso.spring.persistencia;
+
+import javax.sql.DataSource;
+
+public class PersonaDaoJdbc {
+	
+	private DataSource ds;
+
+	public DataSource getDs() {
+		return ds;
+	}
+
+	public void setDs(DataSource ds) {
+		this.ds = ds;
+	}
+		
+}

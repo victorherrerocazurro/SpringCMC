@@ -1,0 +1,18 @@
+package com.curso.spring.negocio;
+
+import java.util.List;
+
+import com.curso.spring.entidades.Persona;
+import com.curso.spring.persistencia.PersonaDao;
+
+public class ServicioBusquedaParejas {
+	private PersonaDao dao;
+	
+	public List<Persona> buscarAfines(Persona elQueBusca){
+		
+		List<Persona> candidatosASerAfines = dao.consultarTodos();
+		
+		return null;
+	}
+	
+}

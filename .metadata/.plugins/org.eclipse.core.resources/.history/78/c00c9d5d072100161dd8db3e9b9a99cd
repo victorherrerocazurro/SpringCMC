@@ -1,0 +1,11 @@
+package com.ejemplo.contenedor.logica;
+
+public class NuevaImplementacionPersistencia implements IPersistencia {
+
+	@Override
+	public void metodoPersistencia() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

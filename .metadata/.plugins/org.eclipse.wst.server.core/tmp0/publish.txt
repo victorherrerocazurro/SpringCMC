@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Tue May 24 18:58:41 CEST 2016
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\curso\\.m2\\repository\\org\\springframework\\spring-web\\4.2.6.RELEASE\\spring-web-4.2.6.RELEASE.jar=C\:\\sts-bundle\\pivotal-tc-server-developer-3.1.3.SR1\\base-instance\\wtpwebapps\\HolaMundoWeb\\WEB-INF\\lib\\spring-web-4.2.6.RELEASE.jar
+org.eclipse.jst.j2ee.server\:Contedores=C\:\\sts-bundle\\pivotal-tc-server-developer-3.1.3.SR1\\base-instance\\wtpwebapps\\ContenedorWeb\\WEB-INF\\lib\\Contedores.jar
+org.eclipse.jst.j2ee.server\:HolaMundoWeb=C\:\\sts-bundle\\pivotal-tc-server-developer-3.1.3.SR1\\base-instance\\wtpwebapps\\HolaMundoWeb
+org.eclipse.jst.jee.server\:ContenedorWeb=C\:\\sts-bundle\\pivotal-tc-server-developer-3.1.3.SR1\\base-instance\\wtpwebapps\\ContenedorWeb
+org.eclipse.jst.j2ee.server\:HolaMundo=C\:\\sts-bundle\\pivotal-tc-server-developer-3.1.3.SR1\\base-instance\\wtpwebapps\\HolaMundoWeb\\WEB-INF\\lib\\HolaMundo-0.0.1-SNAPSHOT.jar

@@ -1,0 +1,35 @@
+package com.curso.spring;
+
+public class Dios {
+
+	private static Dios instance = new Dios();
+	
+	private Dios() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static Dios getInstance(){
+		return instance;
+	}
+	
+	public Persona crearPersona(){
+		return new PersonaImpl();
+	}
+	
+	private class PersonaImpl implements Persona{
+
+		private String nombre;
+		
+		public String getNombre() {
+			// TODO Auto-generated method stub
+			return nombre;
+		}
+
+		public void setNombre(String nombre) {
+			this.nombre = nombre;
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,37 @@
+package com.curso.spring.negocio;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.curso.spring.entidades.Persona;
+import com.curso.spring.persistencia.PersonaDao;
+
+@Service
+public class ServicioBusquedaParejas {
+	@Autowired
+	private PersonaDao dao;
+
+	@Autowired
+	public ServicioBusquedaParejas(PersonaDao dao) {
+		super();
+		this.dao = dao;
+	}
+
+	public PersonaDao getDao() {
+		return dao;
+	}
+
+	public void setDao(PersonaDao dao) {
+		this.dao = dao;
+	}
+
+	public List<Persona> buscarAfines(Persona elQueBusca){
+		
+		List<Persona> candidatosASerAfines = dao.consultarTodos();
+		
+		return null;
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.curso.spring.persistencia;
+
+public class PersonaDaoHibernate {
+
+}

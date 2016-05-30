@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="saludador" class="com.ejemplo.spring.holamundo.Saludador" scope="singleton" lazy-init="false">
+		<constructor-arg name="nombre" value="Victor"/>
+	</bean>
+
+	<!-- bean name="otro" class="com.ejemplo.spring.holamundo.Saludador">
+		<constructor-arg name="apellido" value="Perez"/>
+		<constructor-arg name="nombre" value="Juan"/>
+	</bean-->
+
+</beans>

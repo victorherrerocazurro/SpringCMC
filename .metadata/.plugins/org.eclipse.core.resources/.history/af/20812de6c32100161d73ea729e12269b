@@ -1,0 +1,13 @@
+package com.ejemplo.spring.holamundo;
+
+public class Saludador {
+
+	public Saludador(String nombre, String apellido) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void saludar() {
+		System.out.println("Hola Mundo!!!!");
+	}
+	
+}

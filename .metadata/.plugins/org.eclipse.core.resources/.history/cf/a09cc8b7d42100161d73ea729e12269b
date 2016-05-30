@@ -1,0 +1,13 @@
+package com.curso.spring;
+
+public class Dios {
+
+	private Dios() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Dios createInstance(){
+		return new Dios();
+	}
+	
+}

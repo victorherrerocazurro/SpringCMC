@@ -1,0 +1,19 @@
+package com.ejemplo.contenedor.logica;
+
+public class Negocio {
+
+	//private Persistencia persistencia = new Persistencia();
+	private Persistencia persistencia = null;
+	
+	public Negocio(Persistencia persistencia) {
+		super();
+		this.persistencia = persistencia;
+	}
+
+
+
+	public void metodoNegocio() {
+		persistencia.metodoPersistencia();
+	}
+	
+}

@@ -1,0 +1,9 @@
+package com.curso.spring.persistencia;
+
+import org.hibernate.SessionFactory;
+
+public class PersonaDaoHibernate {
+
+	private SessionFactory sf;
+	
+}

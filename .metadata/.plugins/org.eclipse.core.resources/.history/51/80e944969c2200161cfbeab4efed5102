@@ -1,0 +1,35 @@
+package com.curso.spring.persistencia;
+
+import org.hibernate.SessionFactory;
+
+import com.curso.spring.entidades.Persona;
+
+public class PersonaDaoHibernate {
+
+	private SessionFactory sf;
+
+	public SessionFactory getSf() {
+		return sf;
+	}
+
+	public void setSf(SessionFactory sf) {
+		this.sf = sf;
+	}
+	
+	public void insertar(Persona p){
+		
+	}
+	
+	public void borrar(Integer id){
+		
+	}
+	
+	public void editar(Persona p){
+		
+	}
+	
+	public Persona consultarPorId(){
+		
+	}
+	
+}

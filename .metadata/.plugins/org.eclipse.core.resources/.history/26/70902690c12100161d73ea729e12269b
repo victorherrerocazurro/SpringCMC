@@ -1,0 +1,12 @@
+package com.ejemplo.spring.holamundo;
+
+public class Lanzadora {
+
+	public static void main(String[] args) {
+		/*Saludador saludador = new Saludador();
+		
+		saludador.saludar();*/
+
+	}
+
+}

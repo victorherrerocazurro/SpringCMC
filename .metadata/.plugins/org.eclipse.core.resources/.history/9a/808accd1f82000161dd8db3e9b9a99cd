@@ -1,0 +1,5 @@
+package com.ejemplo.contenedor.logica;
+
+public class Persistencia {
+
+}
