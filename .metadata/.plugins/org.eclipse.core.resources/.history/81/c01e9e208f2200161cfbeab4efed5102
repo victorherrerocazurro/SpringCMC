@@ -1,8 +1,0 @@
-package com.curso.spring;
-
-public interface Persona {
-	
-	public String getNombre();
-	public void setNombre(String nombre);
-	
-}

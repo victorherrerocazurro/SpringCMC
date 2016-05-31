@@ -1,0 +1,22 @@
+package com.aeat.portalparejas.modelo.negocio;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.aeat.portalparejas.modelo.entidades.Persona;
+import com.aeat.portalparejas.modelo.servicios.ServicioParejasImpl;
+
+public class ServicioParejasImplTest {
+
+	@Test
+	public void test() {
+		ServicioParejasImpl sut = new ServicioParejasImpl();
+		//Dato de prueba (entrada)
+		Persona persona = new Persona("Victor", 22, 2.00, 'M');
+		sut.insert(persona);
+		
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.aeat.portalparejas.modelo.negocio;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.aeat.portalparejas.modelo.servicios.ServicioParejasImpl;
+
+public class ServicioParejasImplTest {
+
+	@Test
+	public void test() {
+		ServicioParejasImpl sut = new ServicioParejasImpl();
+		
+		
+		
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,9 +1,0 @@
-package com.curso.spring;
-
-public class Persona {
-
-	private Persona() {
-		// TODO Auto-generated constructor stub
-	}
-	
-}

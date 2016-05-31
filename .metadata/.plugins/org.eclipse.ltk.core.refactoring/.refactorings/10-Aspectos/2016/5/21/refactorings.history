@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;resultado&apos; from expression &apos;ampliacion.getNoAfines(persona)&apos;&#x0D;&#x0A;- Original project: &apos;10-Aspectos&apos;&#x0D;&#x0A;- Variable name: &apos;resultado&apos;&#x0D;&#x0A;- Destination method: &apos;com.ejemplo.Proxy.getNoAfines()&apos;&#x0D;&#x0A;- Variable expression: &apos;ampliacion.getNoAfines(persona)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;resultado&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src\/main\/java&lt;com.ejemplo{Proxy.java" name="resultado" replace="true" selection="303 31" stamp="1464283440409" version="1.0"/>
+</session>

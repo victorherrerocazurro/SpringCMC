@@ -1,7 +1,0 @@
-package com.curso.spring.negocio;
-
-import com.curso.spring.persistencia.PersonaDao;
-
-public class ServicioBusquedaParejas {
-	private PersonaDao dao;
-}

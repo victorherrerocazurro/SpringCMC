@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="servicio"
+		class="com.aeat.portalparejas.modelo.servicios.ServicioParejasImpl">
+		<property name="reglas" ref="reglas" />
+		<property name="dao" ref="dao" />
+	</bean>
+	
+	<bean id="reglas" class="com.aeat.portalparejas.modelo.negocio.ReglasJavaImpl" />
+	
+	<!-- Dao con JDBC tradicional -->
+
+	<bean id="dao" class="com.aeat.portalparejas.persistencia.dao.PersonaDaoJdbcImpl">
+		<property name="dataSource" ref="ds"/>
+	</bean>
+	
+	<bean id="ds" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver" />
+		<property name="url"
+			value="jdbc:derby:C:\\db" />
+	</bean>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	<!-- Dao con JdbcDaoSupport de Spring -->
+
+<!-- 	<bean id="dao" -->
+<!-- 		class="com.aeat.portalparejas.persistencia.dao.PersonaDaoSimpleJdbcDaoSupportImpl"> -->
+<!-- 		<property name="jdbcTemplate" ref="template" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="template" class="org.springframework.jdbc.core.JdbcTemplate"> -->
+<!-- 		<constructor-arg name="dataSource" ref="ds" /> -->
+<!-- 	</bean> -->
+
+	<!-- Dao con JTemplate -->
+	
+<!-- 	<bean id="dao" class="com.aeat.portalparejas.persistencia.dao.PersonaDaoSimpleJdbcTemplateImpl"> -->
+<!-- 		<property name="template" ref="template"/> -->
+<!-- 	</bean> -->
+	
+<!-- 	<bean id="template" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate"> -->
+<!-- 		<constructor-arg name="dataSource" ref="ds" /> -->
+<!-- 	</bean> -->
+
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="Mensajes" />
+	</bean>
+
+</beans>

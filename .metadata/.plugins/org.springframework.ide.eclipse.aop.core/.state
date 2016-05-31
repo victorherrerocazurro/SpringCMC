@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="HolaMundoWeb"/>
-<aop-project name="HolaMundo"/>
-<aop-project name="Deidades"/>
-<aop-project name="PortalParejasDemo"/>
+<aop-project name="Modelo"/>
+<aop-project name="Contratos"/>
+<aop-project name="Cliente-Spring-JDBC"/>
 </aop-reference-model>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Definicion del Aspecto de Auditoria -->
+	<bean id="aspecto" class="com.ejemplo.Aspecto" />
+	
+	<bean id="negocio" class="com.ejemplo.Negocio"/>
+
+	<aop:config>
+		<aop:pointcut
+			expression="execution(* com.ejemplo.Negocio.*(com.ejemplo.Persona)) &amp;&amp; args(p)"
+			id="servicioPointCut"/>
+		<aop:aspect ref="aspecto">
+<!-- 			<aop:after method="despuesDeServicio" pointcut-ref="servicioPointCut"  -->
+<!-- 				arg-names="p"/> -->
+<!-- 			<aop:before method="antesDeServicio" pointcut-ref="servicioPointCut"  -->
+<!-- 				arg-names="p"/> -->
+			<aop:around method="durante" pointcut-ref="servicioPointCut"
+				arg-names="p" />
+		</aop:aspect>
+		<aop:aspect>
+			<aop:declare-parents
+				types-matching="com.ejemplo.Negocio+"
+				implement-interface="com.ejemplo.AmpliacionServicio"
+				default-impl="com.ejemplo.AmpliacionServicioImpl" />
+		</aop:aspect>
+	</aop:config>
+
+
+</beans>
