@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="4.3" timestamp="2012-10-26T08:27:21.710">
+<file name="D:\Cursos\Spring-Maven\workspace1\Modelo\src\com\aeat\portalparejas\modelo\servicios\ServicioParejasImpl.java">
+<violation beginline="92" endline="92" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Java Logging Rules" package="com.aeat.portalparejas.modelo.servicios" class="ServicioParejasImpl" method="insert" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+<violation beginline="94" endline="94" begincolumn="17" endcolumn="34" rule="SystemPrintln" ruleset="Java Logging Rules" package="com.aeat.portalparejas.modelo.servicios" class="ServicioParejasImpl" method="insert" externalInfoUrl="http://pmd.sourceforge.net/rules/logging-java.html#SystemPrintln" priority="3">
+System.out.print is used
+</violation>
+</file>
+</pmd>

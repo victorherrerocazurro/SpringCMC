@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="7.129" errors="0" skipped="0" tests="1" name="com.aeat.portalparejas.persistencia.hibernate.HibernateDaoTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre6\bin"/>
+    <property name="java.vm.version" value="20.10-b01"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate"/>
+    <property name="java.runtime.version" value="1.6.0_35-b10"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="basedir" value="D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre6\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="surefire.real.class.path" value="D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\surefire\surefirebooter2767234276398906174.jar"/>
+    <property name="java.io.tmpdir" value="C:\Users\Victor\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre6\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Diskeeper Corporation\ExpressCache\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;C:\Program Files (x86)\Java\jre6\bin;D:\IDEs\springsource\apache-maven-3.0.3\bin;;."/>
+    <property name="surefire.test.class.path" value="D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\test-classes;D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\classes;C:\Users\Victor\.m2\repository\org\hibernate\hibernate-core\3.6.9.Final\hibernate-core-3.6.9.Final.jar;C:\Users\Victor\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Victor\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Users\Victor\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Victor\.m2\repository\org\hibernate\hibernate-commons-annotations\3.2.0.Final\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\Victor\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Victor\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Victor\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\Victor\.m2\repository\org\apache\derby\derby\10.8.2.2\derby-10.8.2.2.jar;C:\Users\Victor\.m2\repository\javassist\javassist\3.12.1.GA\javassist-3.12.1.GA.jar;C:\Users\Victor\.m2\repository\com\aeat\portalparejas\Contratos\0.0.1-SNAPSHOT\Contratos-0.0.1-SNAPSHOT.jar;C:\Users\Victor\.m2\repository\com\aeat\portalparejas\Entidades\0.0.1-SNAPSHOT\Entidades-0.0.1-SNAPSHOT.jar;C:\Users\Victor\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Victor\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Victor\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.25.0\selenium-firefox-driver-2.25.0.jar;C:\Users\Victor\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.25.0\selenium-remote-driver-2.25.0.jar;C:\Users\Victor\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\Victor\.m2\repository\org\json\json\20080701\json-20080701.jar;C:\Users\Victor\.m2\repository\org\seleniumhq\selenium\selenium-api\2.25.0\selenium-api-2.25.0.jar;C:\Users\Victor\.m2\repository\org\apache\httpcomponents\httpclient\4.1.2\httpclient-4.1.2.jar;C:\Users\Victor\.m2\repository\org\apache\httpcomponents\httpcore\4.1.2\httpcore-4.1.2.jar;C:\Users\Victor\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\Victor\.m2\repository\com\google\guava\guava\12.0\guava-12.0.jar;C:\Users\Victor\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Victor\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\Victor\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\Victor\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\Users\Victor\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-orm\3.0.5.RELEASE\spring-orm-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-beans\3.0.5.RELEASE\spring-beans-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-core\3.0.5.RELEASE\spring-core-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-asm\3.0.5.RELEASE\spring-asm-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-jdbc\3.0.5.RELEASE\spring-jdbc-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-aop\3.0.5.RELEASE\spring-aop-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-context\3.0.5.RELEASE\spring-context-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-expression\3.0.5.RELEASE\spring-expression-3.0.5.RELEASE.jar;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Victor"/>
+    <property name="user.timezone" value="Europe/Paris"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Victor"/>
+    <property name="java.class.path" value="D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\test-classes;D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\classes;C:\Users\Victor\.m2\repository\org\hibernate\hibernate-core\3.6.9.Final\hibernate-core-3.6.9.Final.jar;C:\Users\Victor\.m2\repository\antlr\antlr\2.7.6\antlr-2.7.6.jar;C:\Users\Victor\.m2\repository\commons-collections\commons-collections\3.1\commons-collections-3.1.jar;C:\Users\Victor\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Victor\.m2\repository\org\hibernate\hibernate-commons-annotations\3.2.0.Final\hibernate-commons-annotations-3.2.0.Final.jar;C:\Users\Victor\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Victor\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\Victor\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\Victor\.m2\repository\org\apache\derby\derby\10.8.2.2\derby-10.8.2.2.jar;C:\Users\Victor\.m2\repository\javassist\javassist\3.12.1.GA\javassist-3.12.1.GA.jar;C:\Users\Victor\.m2\repository\com\aeat\portalparejas\Contratos\0.0.1-SNAPSHOT\Contratos-0.0.1-SNAPSHOT.jar;C:\Users\Victor\.m2\repository\com\aeat\portalparejas\Entidades\0.0.1-SNAPSHOT\Entidades-0.0.1-SNAPSHOT.jar;C:\Users\Victor\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\Victor\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\Victor\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.25.0\selenium-firefox-driver-2.25.0.jar;C:\Users\Victor\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.25.0\selenium-remote-driver-2.25.0.jar;C:\Users\Victor\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\Victor\.m2\repository\org\json\json\20080701\json-20080701.jar;C:\Users\Victor\.m2\repository\org\seleniumhq\selenium\selenium-api\2.25.0\selenium-api-2.25.0.jar;C:\Users\Victor\.m2\repository\org\apache\httpcomponents\httpclient\4.1.2\httpclient-4.1.2.jar;C:\Users\Victor\.m2\repository\org\apache\httpcomponents\httpcore\4.1.2\httpcore-4.1.2.jar;C:\Users\Victor\.m2\repository\commons-codec\commons-codec\1.4\commons-codec-1.4.jar;C:\Users\Victor\.m2\repository\com\google\guava\guava\12.0\guava-12.0.jar;C:\Users\Victor\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Victor\.m2\repository\net\java\dev\jna\jna\3.4.0\jna-3.4.0.jar;C:\Users\Victor\.m2\repository\net\java\dev\jna\platform\3.4.0\platform-3.4.0.jar;C:\Users\Victor\.m2\repository\commons-io\commons-io\2.0.1\commons-io-2.0.1.jar;C:\Users\Victor\.m2\repository\org\apache\commons\commons-exec\1.1\commons-exec-1.1.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-orm\3.0.5.RELEASE\spring-orm-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-beans\3.0.5.RELEASE\spring-beans-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-core\3.0.5.RELEASE\spring-core-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-asm\3.0.5.RELEASE\spring-asm-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-jdbc\3.0.5.RELEASE\spring-jdbc-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-tx\3.0.5.RELEASE\spring-tx-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-aop\3.0.5.RELEASE\spring-aop-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-context\3.0.5.RELEASE\spring-context-3.0.5.RELEASE.jar;C:\Users\Victor\.m2\repository\org\springframework\spring-expression\3.0.5.RELEASE\spring-expression-3.0.5.RELEASE.jar;"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre6"/>
+    <property name="sun.java.command" value="D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\surefire\surefirebooter2767234276398906174.jar D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\surefire\surefire1641069734406987422tmp D:\Cursos\Spring-JSF-EFRON\workspace\PersistenciaHibernate\target\surefire\surefire6046441745781510242tmp"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="es"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_35"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre6\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre6\lib\resources.jar;C:\Program Files\Java\jre6\lib\rt.jar;C:\Program Files\Java\jre6\lib\sunrsasign.jar;C:\Program Files\Java\jre6\lib\jsse.jar;C:\Program Files\Java\jre6\lib\jce.jar;C:\Program Files\Java\jre6\lib\charsets.jar;C:\Program Files\Java\jre6\lib\modules\jdk.boot.jar;C:\Program Files\Java\jre6\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="localRepository" value="C:\Users\Victor\.m2\repository"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.947" classname="com.aeat.portalparejas.persistencia.hibernate.HibernateDaoTest" name="testInsertar">
+    <failure message="Ha fallado la insercion de la persona expected:&lt;0&gt; but was:&lt;1&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Ha fallado la insercion de la persona expected:&lt;0&gt; but was:&lt;1&gt;
+	at junit.framework.Assert.fail(Assert.java:50)
+	at junit.framework.Assert.failNotEquals(Assert.java:287)
+	at junit.framework.Assert.assertEquals(Assert.java:67)
+	at com.aeat.portalparejas.persistencia.hibernate.HibernateDaoTest.testInsertar(HibernateDaoTest.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:35)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:115)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.ProviderFactory$ClassLoaderProxy.invoke(ProviderFactory.java:103)
+	at $Proxy0.invoke(Unknown Source)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:150)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcess(SurefireStarter.java:91)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:69)
+</failure>
+    <system-out>@HL
+@HL-------------------------------------------------------
+@HL T E S T S
+@HL-------------------------------------------------------
+@SLRunning com.aeat.portalparejas.persistencia.hibernate.HibernateDaoTest
+Hibernate: select max(IDPERSONA) from PORTALPAREJAS.personas
+Hibernate: insert into PORTALPAREJAS.personas (nombre, edad, altura, genero, IDPERSONA) values (?, ?, ?, ?, ?)
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+</system-err>
+  </testcase>
+</testsuite>
