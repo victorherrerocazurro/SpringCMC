@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="configuration.properties"/>
+	</bean>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<array>
+				<value>mensajes</value>
+			</array>
+		</property>
+	</bean>
+	
+	<bean class="com.ejemplo.Persona">
+		<!-- Acceso a las propiedades definidas como PropertyPlaceholderConfigurer -->
+		<property name="nombre" value="${nombre}"/>
+	</bean>s
+
+</beans>

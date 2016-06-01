@@ -43,7 +43,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>3.0.5.RELEASE</version>
+			<version>4.2.6.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>aspectj</groupId>

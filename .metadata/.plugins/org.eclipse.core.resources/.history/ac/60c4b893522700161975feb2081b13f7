@@ -1,0 +1,30 @@
+package com.aeat.portalparejas.test;
+
+import javax.sql.DataSource;
+
+import org.apache.commons.dbcp.BasicDataSource;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.context.support.ResourceBundleMessageSource;
+
+@Configuration
+@ComponentScan("com.aeat.portalparejas")
+@Import(PersistenciaConfiguracion.class)
+public class Configuracion {
+
+	@Bean
+	public static DataSource ds(){
+		BasicDataSource ds = new BasicDataSource();
+		ds.setDriverClassName("org.apache.derby.jdbc.EmbeddedDriver");
+		ds.setUrl("jdbc:derby:C:\\DB");
+		return ds;
+	}
+	
+	public ResourceBundleMessageSource messageSource(){
+		ResourceBundleMessageSource ms = new ResourceBundleMessageSource();
+		return ms;
+	}
+	
+}

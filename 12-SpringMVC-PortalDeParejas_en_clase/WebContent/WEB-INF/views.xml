@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pdf/listadoAfines" class="com.aplicacion.parejas.presentacion.vistas.ListadoAfinesPdfView"/>
+	
+	<bean id="excell/listadoAfines" class="com.aplicacion.parejas.presentacion.vistas.ListadoAfinesExcellView"/>
+
+	<bean id="json/listadoAfines" class="org.springframework.web.servlet.view.json.MappingJacksonJsonView"/>
+
+</beans>

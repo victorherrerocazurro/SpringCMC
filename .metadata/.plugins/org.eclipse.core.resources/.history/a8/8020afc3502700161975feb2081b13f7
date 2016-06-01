@@ -1,0 +1,14 @@
+package com.aeat.portalparejas.test;
+
+import org.hibernate.SessionFactory;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean;
+
+@Configuration
+public class PersistenciaConfiguracion {
+
+	public SessionFactory sf(){
+		return (SessionFactory) new AnnotationSessionFactoryBean();
+	}
+	
+}

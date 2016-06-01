@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-lazy-init="true"
+	default-autowire="byName">
+	
+	<!-- inyeccion de dependencias por constructor -->
+	<bean id="otraPersonaMas" class="javabeans.Persona"
+		depends-on="aunHabiaOtraPersona">
+		<constructor-arg index="0" value="juan" />
+		<constructor-arg index="1" value="55"/>
+		<property name="telefonos" value="9856666333"/>
+	</bean>
+	
+	<!-- uso del espacio de nombres p -->
+	<bean id="aunHabiaOtraPersona" class="javabeans.Persona"
+		p:nombre="rosa" p:edad="18" 
+		p:pareja-ref="otraPersonaMas"
+		init-method="inicializar"  
+		lazy-init="default"
+		/>
+		
+	<bean id="pareja" class="javabeans.Persona" 
+		parent="plantillaMayorEdad">
+		<property name="nombre" value="don juan"/>
+		<property name="pareja">
+		<!-- anonymous inner bean-->
+			<bean class="javabeans.Persona">
+				<property name="nombre" value="soloMia"/>
+			</bean>
+		</property>
+	</bean>	
+	
+	<import resource="plantillas.xml"/>
+
+	<!-- para leer fichero properties de mensajes -->
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="Mensajes"/>
+	</bean>
+</beans>

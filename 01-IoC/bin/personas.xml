@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- construimos una instancia de la clase vía constructor x defecto -->
+	<bean id="unaPersona" class="javabeans.Persona" scope="singleton">
+		<!-- le asignamos propiedades via setter -->
+		<property name="nombre">
+			<value>Fernando</value>
+		</property>
+		<property name="edad" value="39" />
+		<property name="pareja">
+			<ref bean="otraPersona" />
+		</property>
+		<property name="telefonos">
+			<list>
+				<value>9146633388</value>
+				<value>625887744</value>
+			</list>
+		</property>
+		<property name="amigos">
+			<set>
+				<ref bean="otraPersona" />
+			</set>
+		</property>
+		<property name="calificaciones">
+			<map>
+				<entry>
+					<key>
+						<value>java</value>
+					</key>
+					<value>7.5</value>
+				</entry>
+				<entry>
+					<key>
+						<value>net</value>
+					</key>
+					<value>5.5</value>
+				</entry>				
+			</map>
+		</property>
+
+	</bean>
+
+	<bean id="otraPersona" class="javabeans.Persona">
+		<property name="nombre" value="ana" />
+		<property name="edad" value="49" />
+		<property name="pareja" ref="otraPersonaMas"/>
+		<property name="telefonos" value="61522336" />
+		<property name="amigos" ref="unaPersona" />
+		<property name="colores">
+			<props>
+				<prop key="rojo">#ff0000</prop>
+				<prop key="verde">#00ff00</prop>
+			</props>
+		</property>
+	</bean>
+
+</beans>

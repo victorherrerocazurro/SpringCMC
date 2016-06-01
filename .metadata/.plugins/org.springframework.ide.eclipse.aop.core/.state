@@ -2,5 +2,8 @@
 <aop-reference-model>
 <aop-project name="Modelo"/>
 <aop-project name="Contratos"/>
+<aop-project name="PersistenciaHibernate"/>
+<aop-project name="08-PropertiesInternacionalizacion"/>
+<aop-project name="PersistenciaJDBC"/>
 <aop-project name="Cliente-Spring-JDBC"/>
 </aop-reference-model>

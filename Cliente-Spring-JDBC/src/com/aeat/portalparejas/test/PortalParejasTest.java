@@ -5,6 +5,7 @@ import java.util.Locale;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.aeat.portalparejas.modelo.entidades.Persona;
@@ -17,8 +18,10 @@ public class PortalParejasTest {
 	 */
 	public static void main(String[] args) {
 		
-		ApplicationContext context = new ClassPathXmlApplicationContext("classpath:ApplicationContext.xml", "classpath:persistencia.xml");
+		//ApplicationContext context = new ClassPathXmlApplicationContext("classpath:ApplicationContext.xml", "classpath:persistencia.xml");
 
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Configuracion.class);
+		
 		ServicioParejas servicio = context.getBean(ServicioParejas.class);
 		
 		//Inicializamos la BD

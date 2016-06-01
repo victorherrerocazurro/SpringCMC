@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd" 
+	default-lazy-init="true">
+
+	<!-- Instanciar por factoria estatica -->
+	<bean id="tierra" class="javabeans.Tierra" factory-method="getInstance">
+		<property name="habitantes">
+			<list>
+				<ref bean="fernando"/>
+				<ref bean="lucia"/>
+				<ref bean="recienNacido"/>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Instancia por factoria instanciada -->
+	<bean id="enteSuperior" class="javabeans.EnteSuperior"/>
+	
+	<!-- La creación de este bean depende de la creación previa del entesuperior, esto se indica con depends-on -->
+	<bean id="recienNacido" class="javabeans.Persona" factory-bean="enteSuperior" factory-method="crearPersona" depends-on="enteSuperior"/>
+	
+	<!-- Instanciar beans por setters-->
+	<bean id="fernando" class="javabeans.Persona">
+		<property name="nombre" value="fernando"/>
+		<property name="edad" value="39"/>
+		<!-- Inyeccion de dependencia -->
+		<property name="pareja" ref="lucia"/>
+	</bean>
+	
+	<!-- Instanciar por constructor -->
+	<bean id="lucia" class="javabeans.Persona">
+		<constructor-arg name="nombre" value="lucia"/>
+		<constructor-arg name="edad" value="31"/>
+		<!-- Inyeccion de dependencia -->
+		<constructor-arg name="pareja" ref="fernando"/>
+	</bean>
+	
+	<!-- Instanciar prototype -->
+	<bean id="pablo-multirealidad" class="javabeans.Persona" scope="prototype">
+		<property name="nombre" value="pablo"/>
+		<property name="edad" value="21"/>
+	</bean>
+	
+	<!-- Inicializar colecciones -->
+	<!-- construimos una instancia de la clase vía constructor x defecto -->
+	<bean id="andres" class="javabeans.Persona" scope="singleton">
+		<!-- List de primitivos por valor -->
+		<property name="telefonos">
+			<list>
+				<value>9146633388</value>
+				<value>625887744</value>
+			</list>
+		</property>
+		<!-- Set de objetos por referencia -->
+		<property name="amigos">
+			<set>
+				<ref bean="fernando" />
+				<ref bean="lucia" />
+			</set>
+		</property>
+		<!-- Map de primitivos por valor -->
+		<property name="calificaciones">
+			<map>
+				<entry>
+					<key>
+						<value>java</value>
+					</key>
+					<value>7.5</value>
+				</entry>
+				<entry>
+					<key>
+						<value>net</value>
+					</key>
+					<value>5.5</value>
+				</entry>
+			</map>
+		</property>
+		<!-- Properties por valor -->
+		<property name="colores">
+			<props>
+				<prop key="rojo">#ff0000</prop>
+				<prop key="verde">#00ff00</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<!-- uso del espacio de nombres p -->
+	<bean id="juan" class="javabeans.Persona" p:nombre="juan" p:edad="18" />
+
+	<!-- Bean interno anonimo -->
+	<bean id="gabriel" class="javabeans.Persona">
+		<property name="nombre" value="gabriel"/>
+		<property name="pareja">
+			<bean class="javabeans.Persona">
+				<property name="nombre" value="angeles"/>
+			</bean>
+		</property>
+	</bean>
+
+</beans>
